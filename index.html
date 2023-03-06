@@ -50,17 +50,15 @@
       <script type="text/javascript" src="assets/js/main.js"></script>
 
       <!-- Google Analytics -->
+      <!-- Google tag (gtag.js) -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-0JNNQRR9BM"></script>
       <script>
-      	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      	})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-      	ga('create', 'UA-89619965-1', 'auto');
-      	ga('send', 'pageview');
-
+        gtag('config', 'G-0JNNQRR9BM');
       </script>
-
       <style>
 
       	.modal-dialog {
@@ -333,7 +331,7 @@
   			<img class="profile-image img-circle img-responsive pull-left" src="assets/images/me.png" alt="Ashutosh Parekh" style="height:195px;width=150px" />
   			<div class="profile-content pull-left">
   				<h1 class="name">Ashutosh Parekh</h1>
-  				<h2 class="desc">Computer and Software Development Enthusiast</h2>
+  				<h2 class="desc"></h2> 
 
   				<ul class="social list-inline">
 
@@ -346,7 +344,9 @@
 
   				</ul>
   			</div><!--//profile-->
+        <!--
   			<a class="btn btn-warning pull-right" href="assets/Resume - Ashutosh Parekh.pdf" target="_blank"><i class="fa fa-file-text"></i>Download Resume</a>
+        -->
   		</div><!--//container-->
   	</header><!--//header-->
 
@@ -358,9 +358,9 @@
   					<div class="section-inner">
   						<h2 class="heading">About Me</h2>
   						<div class="content">
-  							<p>Hi! I am currently working as a Senior Software Engineer at Salesforce.com, Inc. based in San Francisco primarily working with the infrastructure team on distributed systems. I hold a Masters degree in Computer Science from the University of California, San Diego with focus on Machine Learning and Artificial Intelligence. 
+  							<p>Hi! I am currently working as a Lead Software Engineer at Salesforce, Inc. based in San Francisco primarily working with the infrastructure team on distributed systems. I hold a Masters degree in Computer Science from the University of California, San Diego with focus on Machine Learning and Artificial Intelligence. 
   							</p><p>I am interested in converting ideas to code. I dabble with various technologies to build reselient applications and software solutions. I have prior experience in competitive programming and web and app development.</p>
-  							<p>Apart from these, I like playing the drums as a hobby and listening to Rock/Metal music \m/. Also, I love going on scenic hikes, be alongside nature, read interesting <a href='https://www.goodreads.com/review/list/152507358-ashutosh-parekh' target='_blank'>books</a> and travel extensively.</p>
+  							<p>Apart from these, I like playing the drums as a hobby and listening to Rock/Metal music \m/. Also, I love going on scenic hikes, be alongside nature, read interesting <a href='https://www.goodreads.com/review/list/152507358-ashutosh-parekh?shelf=read' target='_blank'>books</a> and travel extensively.</p>
 
   						</div><!--//content-->
   					</div><!--//section-inner-->
@@ -371,7 +371,7 @@
   						<h2 class="heading">Work Experience</h2>
   						<div class="content">
                                 <div class="item">
-                  <h3 class="title">Senior Software Engineer - <span class="title"><a href="http://www.salesforce.com" target="_blank">Salesforce, Inc.</a></span> <span class="year">(Feb 2019 - Current)</span></h3>
+                  <h3 class="title">Lead Software Engineer - <span class="title"><a href="http://www.salesforce.com" target="_blank">Salesforce, Inc.</a></span> <span class="year">(Feb 2019 - Current)</span></h3>
                   <p> Work with deploying the HBase database on the public cloud using Kubernetes. Create scripts and process management code and package it using Docker along with the security related changes. Work on the algorithms for auto-scaling components and its implementation to save on the overall cost-to-serve. Responsible for creating a set of test cases, documentation for knowledge articles and ensuring the continuous delivery of a highly scalable and consistent database to be served via the public cloud.</p>
                 </div><!--//item-->   
   							<div class="item">
@@ -440,74 +440,11 @@
   								</div><!--//desc-->
   							</div><!--//item-->  							
 
-  							<div class="item row">
-  								<img class="col-md-4 col-sm-4 col-xs-12 img-responsive project-image" src="assets/images/projects/q2.png" alt="" />
-  								<div class="desc col-md-8 col-sm-8 col-xs-12">
-  									<h3 class="title">Quiz-o-pedia - Dynamic Quiz Game using Linked Data</h3>
-  									<p>Based on the capstone project. See the publications section for the technical description</p>
-  									<button class="btn btn-sm btn-success" data-toggle="modal" data-target="#myModal1">
-  										View More
-  									</button>
-  								</div><!--//desc-->
-  							</div><!--//item-->
-
-
-  							<div class="item row">
-  								<img class="col-md-4 col-sm-4 col-xs-12 img-responsive project-image" src="assets/images/projects/herein.png" alt="" />
-  								<div class="desc col-md-8 col-sm-8 col-xs-12">
-  									<h3 class="title">HereIn - Buyer and Seller Collaboration Web App</h3>
-  									<p>Freelancing Project</p>
-  									<a href="http://hire-me-test.herokuapp.com" class="btn btn-sm btn-success" target="_blank">
-  										View Website
-  									</a>
-  								</div><!--//desc-->
-  							</div><!--//item-->
-
-  							<div class="item row">
-  								<img class="col-md-4 col-sm-4 col-xs-12 img-responsive project-image" src="assets/images/projects/ct.jpg" alt="" style="height:160px;" />
-  								<div class="desc col-md-8 col-sm-8 col-xs-12">
-  									<h3 class="title">Treasure Trove - Solving the Corporate Treasurer’s Conundrum</h3>
-  									<p>Aggregated Dashboard and predictive analytics for Corporate Treasurers. Built during Barclays Rise Hackathon.</p>
-  								
-  								</div><!--//desc-->
-  							</div><!--//item-->
-
-  							<div class="item row">
-  								<img class="col-md-4 col-sm-4 col-xs-12 img-responsive project-image" src="assets/images/projects/hhf.png" alt="" style="height:160px;"/>
-  								<div class="desc col-md-8 col-sm-8 col-xs-12">
-  									<h3 class="title">Happy Hearts Fund- Website and App</h3>
-  									<p>Developed at JPMorgans Code for Good Challenge, Mumbai 2015</p>
-  									
-  								</div><!--//desc-->
-  							</div><!--//item-->  							
-
-  							<div class="item row">
-  								<img class="col-md-4 col-sm-4 col-xs-12 img-responsive project-image" src="assets/images/projects/gc6.png" alt="" />
-  								<div class="desc col-md-8 col-sm-8 col-xs-12">
-  									<h3 class="title">GreenCiti Waste Collection and Disposal Management Web App</h3>
-  									<p>Developed as part of DJ CSI Codeshastra 2016. </p>
-  									<button class="btn btn-sm btn-success" data-toggle="modal" data-target="#myModal5">
-  										View More
-  									</button>
-  								</div><!--//desc-->
-  							</div><!--//item-->
-
-  							<div class="item row">
-  								<img class="col-md-4 col-sm-4 col-xs-12 img-responsive project-image" src="assets/images/projects/trinity.png" alt="" style="height:220px; "/>
-  								<div class="desc col-md-8 col-sm-8 col-xs-12">
-  									<h3 class="title">DJ Trinity College Fest - Website and App</h3>
-  									<p>Website and Android Application created for DJ Trinity 15 - college fest. See Google Play Store Link for further details.</p>
-  									<a class="btn btn-sm btn-success" href="https://goo.gl/S19X31" target="_blank">
-  										Play Store
-  									</a>
-  								</div><!--//desc-->
-  							</div><!--//item-->
-
   						</div><!--//content-->
   					</div><!--//section-inner-->
   				</section><!--//section-->
 
-
+          <!--
   				<section class="latest section">
   					<div class="section-inner">
   						<h2 class="heading">Major Achievements</h2>
@@ -520,8 +457,8 @@
   									<h3 class="title">JPMorgan's Code for Good, Mumbai 2015 - Challenge Winner</h3>
   									<p>One of the 120 students from more than 1200 selected to participate in the contest.<br>Adjudged as the Challenge Winner for the selected problem.<br>See the Happy Hearts Fund project mentioned in the projects section.</p>
 
-  								</div><!--//desc-->
-  							</div><!--//item-->
+  								</div>
+  							</div>
 
   							<div class="item row">
   								<img class="col-md-4 col-sm-4 col-xs-12 img-responsive project-image" src="assets/images/projects/icpc1.jpg" alt="" />
@@ -530,8 +467,8 @@
   									<p>Selected to participate in the onsite round after being the top team from college during the online elimination rounds.<br>
   									Ranked 179 from more than 270 teams in the onsite regional contest.</p>
 
-  								</div><!--//desc-->
-  							</div><!--//item-->
+  								</div>
+  							</div>
 
   							<div class="item row">
   								<img class="col-md-4 col-sm-4 col-xs-12 img-responsive project-image" src="assets/images/projects/icpc2.jpg" alt="" />
@@ -539,8 +476,8 @@
   									<h3 class="title">ACM-ICPC Asia Kharagpur Onsite Regionals 2013 and 2014</h3>
   									<p>Finished 57th from amongst more than 90 teams at the onsite regional contest in 2014.</p>
 
-  								</div><!--//desc-->
-  							</div><!--//item-->
+  								</div>
+  							</div>
 
   							<div class="item row">
   								<img class="col-md-4 col-sm-4 col-xs-12 img-responsive project-image" src="assets/images/projects/codeshasta.jpg" alt="" />
@@ -549,8 +486,8 @@
   									<p>Placed 2nd at the hackathon for building GreenCiti Waste Management App (see project section for details).<br>
   									More than 120 students participated in the hackathon from colleges in Mumbai.</p>
 
-  								</div><!--//desc-->
-  							</div><!--//item-->
+  								</div>
+  							</div>
 
   							<div class="item row">
   								<img class="col-md-4 col-sm-4 col-xs-12 img-responsive project-image" src="assets/images/projects/" alt="" />
@@ -558,12 +495,13 @@
   									<h3 class="title"></h3>
   									<p></p>
 
-  								</div><!--//desc-->
+  								</div>
   							</div>
 
-  						</div><!--//content-->
-  					</div><!--//section-inner-->
-  				</section><!--//section-->
+  						</div>
+  					</div>
+  				</section>
+        -->
 
   			</div><!--//primary-->
 
@@ -639,7 +577,7 @@
                   <li><i class="fa fa-book"></i>Flowers for Algernon</li>
                 </ul>
    							<br>
-  							<center>  <a href="https://www.goodreads.com/review/list/152507358-ashutosh-parekh'" target="_blank" class="btn btn-xs btn-warning">View List</a></center>
+  							<center>  <a href="https://www.goodreads.com/review/list/152507358-ashutosh-parekh?shelf=read" target="_blank" class="btn btn-xs btn-warning">View List</a></center>
               </div><!--//content-->
             </div><!--//section-inner-->
           </aside><!--//section-->
@@ -668,8 +606,9 @@
   	<!-- ******FOOTER****** -->
   	<footer class="footer">
   		<div class="container text-center">
-  			<!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */-->
+  			<!--/* This template is released under the Creative Commons Attribution 3.0 License. Please keep the attribution link below when using for your own project. Thank you for your support. :) If you'd like to use the template without the attribution, you can check out other license options via our website: themes.3rdwavemedia.com */
   			<small class="copyright">Designed with <i class="fa fa-heart"></i> by <a href="http://themes.3rdwavemedia.com" target="_blank">Xiaoying Riley</a> for developers</small>
+        -->
   		</div><!--//container-->
   	</footer><!--//footer-->
 
